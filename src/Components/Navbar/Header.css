@@ -1,0 +1,242 @@
+/* Header.css
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; 
+}
+
+.nav-logo img {
+  width: 100px; 
+  height: auto; 
+}
+
+.nav-bar-list {
+  display: flex;
+  gap: 20px; 
+}
+
+.nav-bar-list div {
+  color: black; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.nav-bar-list div:hover {
+  text-decoration: underline; 
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 15px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    display: block;
+  }
+
+  .navbar.responsive .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none; 
+  }
+
+  .navbar.responsive .menu a {
+    padding: 10px 0;
+    border-top: 1px solid #666;
+    width: 100%;
+  }
+
+  .navbar.responsive .menu.show {
+    display: flex; 
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-main-bar {
+  background-image: url("../Assets/Images/background-img2.jpg");
+}
+
+body {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 80px;
+  transition: all 0.3s ease;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Change the background color when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  z-index: 999; /* Ensure the navbar stays on top of other content */
+}
+
+.left h1 {
+  font-size: 35px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.checkBtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.right ul {
+  display: flex;
+  list-style: none;
+}
+
+.right ul li a {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.right ul li a:hover {
+  background-color: #fff;
+  color: #146c94;
+  border-radius: 5px;
+}
+
+/* .active{
+  background-color: #fff;
+  color: #146C94;
+  border-radius: 5px;
+}  */
+
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: #fff;
+  line-height: 60px;
+  margin-right: 40px;
+  display: none;
+}
+
+.myCheckBox {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    line-height: 60px;
+  }
+  .left h1 {
+    font-size: 25px;
+  }
+  .right ul li a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .left h1 {
+    margin-left: 40px;
+  }
+
+  .checkBtn {
+    display: block;
+    margin-right: 40px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #227399;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 0.7;
+  }
+
+  .right ul {
+    display: block;
+    list-style: none;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    color: black;
+  }
+
+  a.hover {
+    color: #227399;
+  }
+
+  .myCheckBox:checked ~ ul {
+    left: 0;
+  }
+}

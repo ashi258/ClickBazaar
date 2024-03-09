@@ -1,0 +1,54 @@
+.f-t-p-content {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.all-r-res {
+  width: 40%;
+  text-align: center;
+}
+
+.f-content-list-items {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 202px;
+}
+
+.f-c-listitems {
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .f-t-p-content {
+    /* Adjust styles for smaller screens */
+    /* Example: reducing padding or font size */
+    padding: 10px;
+  }
+
+  .all-r-res {
+    /* Adjust styles for smaller screens */
+    /* Example: reducing font size */
+    font-size: 14px;
+  }
+
+  .f-content-list-items {
+    /* Adjust styles for smaller screens */
+    /* Example: changing display or layout */
+    display: block;
+  }
+
+  .f-c-listitems {
+    /* Adjust styles for smaller screens */
+    /* Example: changing font size or margin */
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .f-content-list-items {
+    margin-left: 191px !important;
+  }
+}

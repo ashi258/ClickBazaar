@@ -1,0 +1,178 @@
+.body-main {
+  background-image: url("../Assets/Images/background-img2.jpg");
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+}
+
+.body-t-C {
+  display: flex;
+}
+
+/* Body.css */
+
+/* Body.css */
+
+/* Styles for the main container */
+.body-main {
+  padding: 20px;
+}
+
+/* Styles for the body content container */
+.body-t-C {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/* Styles for the contact form section */
+.contact-f {
+  margin-top: 20px;
+  margin-left: auto;
+  width: 30%;
+  max-width: 600px; /* Adjust as needed */
+}
+
+/* Styles for the form container */
+.elementor-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styles for form fields */
+.elementor-field {
+  margin-bottom: 10px;
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styles for the submit button */
+.elementor-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.elementor-button:hover {
+  background-color: red;
+}
+
+/* Add more CSS rules as needed */
+.submit-btn {
+  background-color: red;
+  text-align: center;
+}
+
+.address-t-main {
+  margin-left: 250px;
+}
+
+.address-t {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-t {
+  color: rgb(239, 227, 227); /* Setting text color to white */
+}
+
+.address-t span {
+  display: block; /* Making each span element appear on a new line */
+  margin-bottom: 10px; /* Adding margin between each line */
+}
+
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .body-t-C {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center items */
+    margin-top: 100px; /* Adjust margin */
+  }
+
+  .contact-f {
+    width: 100%; /* Take full width on smaller screens */
+    margin-left: 0; /* Reset margin */
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .address-t-main {
+    margin-left: 0; /* Reset margin */
+    text-align: center; /* Center text */
+  }
+
+  .address-t {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+/* Additional styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .address-t-main {
+    margin-top: 20px; /* Adjust margin */
+    width: 400px;
+  }
+
+  .get-touch-call {
+    margin-right: 0;
+  }
+
+  .addr-mediaquery {
+    margin-left: 12px;
+  }
+
+  .get-touch {
+    margin: 30px 50px 0 50px;
+  }
+}
+
+/* Additional styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  .body-t-C {
+    margin-top: 50px; /* Adjust margin */
+  }
+
+  .address-t {
+    font-size: 12px; /* Further decrease font size for smaller screens */
+    display: inline;
+  }
+
+  .aihp-Exe {
+    font-size: 58px;
+  }
+
+  .address-t-main {
+    width: 400px;
+  }
+  .get-touch-call {
+    margin-right: 0 !important;
+  }
+
+  .address-t span {
+    /* display: inline; */
+  }
+}
+
+/* styles.css */
+.contact-text-address {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.contact-text-address > div {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-text-address > div {
+    font-size: 20px;
+  }
+}
